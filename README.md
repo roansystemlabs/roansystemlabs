@@ -6,10 +6,11 @@
 
 ## Recent contributions
 
-**[R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows)**: 15 pull requests merged by the maintainer as of 23 November 2026 ([full list](https://github.com/R0Y00/Xbox2Windows/pulls?q=is%3Apr+author%3Aroansystemlabs+is%3Amerged)).
+**[R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows)**: 16 pull requests merged by the maintainer as of 23 November 2026 ([full list](https://github.com/R0Y00/Xbox2Windows/pulls?q=is%3Apr+author%3Aroansystemlabs+is%3Amerged)).
 
 | PR | Change |
 |---|---|
+| [#788](https://github.com/R0Y00/Xbox2Windows/pull/788) | Copy compute buffer reads from a caller-bound source to the store (step 3 of [#721](https://github.com/R0Y00/Xbox2Windows/issues/721)) |
 | [#776](https://github.com/R0Y00/Xbox2Windows/pull/776) | Lower a per-lane compute guard as control flow around its stores (step 2 of [#721](https://github.com/R0Y00/Xbox2Windows/issues/721)) |
 | [#773](https://github.com/R0Y00/Xbox2Windows/pull/773) | Cast a shadow with a translated depth pass and `SampleCmpLevelZero` (shadow step of [#730](https://github.com/R0Y00/Xbox2Windows/issues/730)) |
 | [#750](https://github.com/R0Y00/Xbox2Windows/pull/750) | Accept the LLVM 15 group-base form of a compute byte offset (follow-up to [#724](https://github.com/R0Y00/Xbox2Windows/pull/724)) |
@@ -26,12 +27,10 @@
 | [#435](https://github.com/R0Y00/Xbox2Windows/pull/435) | Check that the built array-atomics probe keeps `nonUniformIndex`, [requested by the maintainer](https://github.com/R0Y00/Xbox2Windows/issues/369#issuecomment-7072920615) after our DXIL analysis |
 | [#348](https://github.com/R0Y00/Xbox2Windows/pull/348) | Run the BC7 block reference check on Linux CI |
 
-**Open:** [#788](https://github.com/R0Y00/Xbox2Windows/pull/788), copy compute buffer reads from a caller-bound source to the store (step 3 of #721).
-
 **Chapters proposed by the studio and approved by the maintainer:**
 
-- [#721](https://github.com/R0Y00/Xbox2Windows/issues/721), two-exit and guarded compute programs: steps 1 and 2 merged (#738, #776), step 3 open (#788).
-- [#730](https://github.com/R0Y00/Xbox2Windows/issues/730), a lit, shadowed scene through the translated mesh and pixel stages: lighting (#749) and shadow (#773) merged; wiring the scene to the EXE remains.
+- [#721](https://github.com/R0Y00/Xbox2Windows/issues/721), two-exit and guarded compute programs: steps 1, 2 and 3 merged (#738, #776, #788), step 4 in progress.
+- [#730](https://github.com/R0Y00/Xbox2Windows/issues/730), a lit, shadowed scene through the translated mesh and pixel stages: lighting (#749) and shadow (#773) merged; the maintainer then wired the scene into the EXE in [#797](https://github.com/R0Y00/Xbox2Windows/pull/797) and [credited our renderer and reference](https://github.com/R0Y00/Xbox2Windows/issues/730#issuecomment-7092276360).
 
 **Hardware verification** on Windows 11 + RTX 3070 and WARP:
 
