@@ -6,10 +6,12 @@
 
 ## Recent contributions
 
-**[R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows)**: 16 pull requests merged by the maintainer as of 23 November 2026 ([full list](https://github.com/R0Y00/Xbox2Windows/pulls?q=is%3Apr+author%3Aroansystemlabs+is%3Amerged)).
+**[R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows)**: 18 pull requests merged by the maintainer as of 23 November 2026 ([full list](https://github.com/R0Y00/Xbox2Windows/pulls?q=is%3Apr+author%3Aroansystemlabs+is%3Amerged)).
 
 | PR | Change |
 |---|---|
+| [#835](https://github.com/R0Y00/Xbox2Windows/pull/835) | Lower a small integer ALU subset between a compute read and its store (step 4 of [#721](https://github.com/R0Y00/Xbox2Windows/issues/721)) |
+| [#831](https://github.com/R0Y00/Xbox2Windows/pull/831) | Run the `pixel_aot` comparison draws as their own CTest entry |
 | [#788](https://github.com/R0Y00/Xbox2Windows/pull/788) | Copy compute buffer reads from a caller-bound source to the store (step 3 of [#721](https://github.com/R0Y00/Xbox2Windows/issues/721)) |
 | [#776](https://github.com/R0Y00/Xbox2Windows/pull/776) | Lower a per-lane compute guard as control flow around its stores (step 2 of [#721](https://github.com/R0Y00/Xbox2Windows/issues/721)) |
 | [#773](https://github.com/R0Y00/Xbox2Windows/pull/773) | Cast a shadow with a translated depth pass and `SampleCmpLevelZero` (shadow step of [#730](https://github.com/R0Y00/Xbox2Windows/issues/730)) |
@@ -29,7 +31,7 @@
 
 **Chapters proposed by the studio and approved by the maintainer:**
 
-- [#721](https://github.com/R0Y00/Xbox2Windows/issues/721), two-exit and guarded compute programs: steps 1, 2 and 3 merged (#738, #776, #788), step 4 in progress.
+- [#721](https://github.com/R0Y00/Xbox2Windows/issues/721), two-exit and guarded compute programs: steps 1, 2, 3 and 4 merged (#738, #776, #788, #835).
 - [#730](https://github.com/R0Y00/Xbox2Windows/issues/730), a lit, shadowed scene through the translated mesh and pixel stages: lighting (#749) and shadow (#773) merged; the maintainer then wired the scene into the EXE in [#797](https://github.com/R0Y00/Xbox2Windows/pull/797) and [credited our renderer and reference](https://github.com/R0Y00/Xbox2Windows/issues/730#issuecomment-7092276360).
 
 **Hardware verification** on Windows 11 + RTX 3070 and WARP:
